@@ -8,8 +8,7 @@
     text-align: center;
     color: azure;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: black;
-
+    background-image: linear-gradient(to right, black, red,);
 }
 .index-1{
     width: 1000px;
