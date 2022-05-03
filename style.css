@@ -39,12 +39,11 @@
 }
 .navegacion{
     width: 1000px;
-    margin: 20px auto;
-    background-color: rgba(151, 88, 36, 0.692);
+    margin: 30px auto;
+    background-color: beige;
 }
 .navegacion ul{
     list-style: none;
-    display: inline-block;
 }
 .menu > li{
     position: relative;
@@ -52,10 +51,26 @@
 }
 .menu > li > a{
     display: block;
-    padding: 20px 15px;
-    color: black;
+    padding: 15px 20px;
+    color: rgba(114, 72, 38, 0.692);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-decoration: none;
+}
+.menu li a:hover{
+    color: yellow;
+    transition: all .3s;
+}
+.submenu{
+    position: absolute;
+    background-color:wheat;
+    display: none;
+}
+.submenu li a{
+    display: block;
+    padding: 15px;
+}
+.menu li:hover .submenu{
+    display: block;
 }
 .logo{
     width: 50px;
@@ -73,10 +88,6 @@ body{
 form{
     background-color: rgba(151, 88, 36, 0.692);
     margin-top: 50px;
-}
-table{
-    background-color: rgba(151, 88, 36, 0.692);
-    margin-top: 30px;
 }
 p{
     margin-top: 20px;
