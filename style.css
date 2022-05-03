@@ -1,192 +1,254 @@
-*{
+* {
     padding: 0;
     margin: 0;
     text-decoration: none;
     flex-wrap: wrap;
 }
-.inicio{
+
+.inicio {
     text-align: center;
     color: azure;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: black;
 
 }
-.index-1{
+
+.index-1 {
     width: 1000px;
     margin: 20px auto;
     background-color: rgba(151, 88, 36, 0.692);
 }
-.inicio-1{
+
+.a-1hover {
+    color: yellow;
+}
+
+.inicio-1 {
     list-style: none;
     display: inline-block;
 }
-.inicio-1 li{
+
+.inicio-1 li {
     position: relative;
     display: inline-block;
 }
-.inicio-1 li a{
+
+.inicio-1 li a {
     display: block;
     padding: 20px 15px;
     color: black;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-decoration: none;
 }
-.main-inicio{
+
+.main-inicio {
     color: black;
     background-color: rgba(151, 88, 36, 0.692);
     text-align: center;
     justify-content: center;
     display: block;
 }
-.navegacion{
+
+.navegacion {
     width: 1000px;
-    margin: 20px auto;
-    background-color: rgba(151, 88, 36, 0.692);
+    margin: 30px auto;
+    background-color: beige;
 }
-.navegacion ul{
+
+.navegacion ul {
     list-style: none;
-    display: inline-block;
 }
-.menu > li{
+
+.menu>li {
     position: relative;
     display: inline-block;
 }
-.menu > li > a{
+
+.menu>li>a {
     display: block;
-    padding: 20px 15px;
-    color: black;
+    padding: 15px 20px;
+    color: rgba(114, 72, 38, 0.692);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-decoration: none;
 }
-.logo{
+
+.menu li a:hover {
+    color: yellow;
+    transition: all .3s;
+}
+
+.submenu {
+    position: absolute;
+    background-color: wheat;
+    display: none;
+}
+
+.submenu li a {
+    display: block;
+    padding: 15px;
+}
+
+.menu li:hover .submenu {
+    display: block;
+}
+
+.logo {
     width: 50px;
     height: 50px;
     display: flex;
     flex-direction: row;
 }
-.main-inicio1{
+
+.main-inicio1 {
     margin-top: 30px;
     background-color: rgba(151, 88, 36, 0.692);
 }
-body{
+
+body {
     background: url(./img/btc\ fondo.jpg);
 }
-form{
+
+form {
     background-color: rgba(151, 88, 36, 0.692);
     margin-top: 50px;
 }
-table{
+
+table {
     background-color: rgba(151, 88, 36, 0.692);
     margin-top: 30px;
 }
-p{
+
+p {
     margin-top: 20px;
     color: red;
     background-color: black;
 }
-.plan-3{
+
+.plan-3 {
     width: 600px;
     height: 260px;
     margin-right: 25px;
 }
-.plan-6{
+
+.plan-6 {
     width: 600px;
     height: 260px;
     margin-right: 25px;
 }
-.plan-12{
+
+.plan-12 {
     width: 600px;
     height: 260px;
     margin-right: 25px;
 }
-.h2-sobrenosotros{
+
+.h2-sobrenosotros {
     color: black;
     background-color: rgba(151, 88, 36, 0.692);
 }
-.p-contacto{
+
+.p-contacto {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-decoration: none;
     background-color: black;
     margin-top: 30px;
     color: white;
 }
-.grid{
+
+.grid {
     display: grid;
     grid-template-areas: "nav nav"
-                        "main main"
-                        "main main"
-                        "redes redes";
+        "main main"
+        "main main"
+        "redes redes";
 }
-.gridMain{
+
+.gridMain {
     display: grid;
-    grid-template-areas:"texto cardUno"
-                        "texto cardDos"
+    grid-template-areas: "texto cardUno"
+        "texto cardDos"
 }
-.gridFooter{
+
+.gridFooter {
     display: grid;
     grid-template-areas: "redes redes";
 }
-header{
+
+header {
     grid-area: nav;
 }
-main{
+
+main {
     grid-area: main;
 }
-footer{
+
+footer {
     grid-area: footer;
 }
-.texto{
+
+.texto {
     grid-area: texto;
     font-size: 30px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     border: solid black 20px;
 }
-.cardUno{
+
+.cardUno {
     grid-area: cardUno;
     display: flex;
     flex-direction: column;
     border: solid black 5px;
     margin: 10px;
 }
-.cardDos{
+
+.cardDos {
     grid-area: cardDos;
     display: flex;
     flex-direction: column;
     border: solid black 5px;
     margin: 10px;
 }
-.redes{
+
+.redes {
     grid-area: redes;
 }
-.imgRedes{
+
+.imgRedes {
     width: 60px;
     height: 60px;
 }
-.divP{
+
+.divP {
     border: solid beige 2px;
 }
-iframe{
+
+iframe {
     border: solid black 2px;
     height: 500px;
     width: 625px;
 }
-@media screen and (max-width: 768px){
-    .grid{
+.boton-1{
+    padding: 1px;
+}
+@media screen and (max-width: 768px) {
+    .grid {
         display: grid;
         grid-template-areas:
-        "nav nav"
-        "main main"
-        "main main"
-        "redes redes";
+            "nav nav"
+            "main main"
+            "main main"
+            "redes redes";
     }
-    .cardUno{
+
+    .cardUno {
         grid-area: cardUno;
         display: flex;
         flex-direction: column;
         border: solid black 5px;
         margin: 10px;
     }
-    .cardDos{
+
+    .cardDos {
         grid-area: cardDos;
         display: flex;
         flex-direction: column;
